@@ -121,12 +121,13 @@ p {
         margin-right: 10%;  
    }
 
-@media only screen and (max-width:1100px) {
+@media only screen and (max-width:1440px) {
     nav ul li {
         display: inline;
        padding-left: 10px;
-       }     
+       }           
    }
+
 
 @media only screen and (max-width:900px) {
     nav ul li {
@@ -175,111 +176,49 @@ p {
     }
 }
 
-
-
-
-
-
-/* Image couldn't be postioned in vertical column */
-  /* @media only screen and (max-width: 900px) {
-
-   nav ul {
-    width: 100%;
-   }
-      
-   h1 {
-    text-align: center;
-   }
-
-   p {
-    text-align: center;
-    width: 20rem;
-   }
-
-   .wrapper {
-    
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      flex-wrap: wrap;
-
-
-   }  */
-/* Image aligned but couldn't removed side scroll */
- /* @media only screen and (max-width:900px) {
-      
-       nav ul {
-            width: 100%;
-       }
-
-        nav ul li {
-            display: inline-block;
-            justify-content: end; 
-            align-items: end;
-            margin-top: 15px;
-            margin-bottom: 10px;
-        } */
-
-        
-            
-  
-
-         /* .content {
-            display: flex;
-            flex-direction: column;
-             margin-left: 10px ; 
-             margin-right: 10px;
-        }  */
-
-/*  
-        h1 {
-            padding-top: 28%;
-            text-align: center;
-        }
-  
-        p {
-            padding-top: 30%;
-            width: 28rem;
-            display: flex;
-            text-align: center;
-            
-        } 
-        
-        .wrapper {
-            
-                 flex-basis: 100%; 
-                padding-top: 35%;
-                width:19rem;
-                display: flex;
-                flex-direction: column;
-            
-        } 
-         */
-           
-
- /* @media only screen and (max-width:400px) { 
-    nav ul {
-        max-width: 320px;
-   }
-
-    nav ul li {
-        display: inline-block;
-        justify-content: end; 
-        align-items: end;
-        margin-top: 15px;
-        margin-bottom: 10px;
+/* Below one doesn't work in either with min-width or with max-width */
+/* 
+@media only screen and (min-width:200px) { 
+    .content {
+        display: inline;
+        flex-direction: column;
+        flex-wrap: wrap; 
     }
-    nav ul li a {
-        display: block;
+    h1 {
+        font-size: 40px;
+        /* color: yellowgreen; 
+        align-items: center;
+        padding-top: 30%;
+        margin-left: 20%;
     }
-    .menu-icon {
-        display: block; 
- }   
-         */
-          
-        
- 
+    p {
+        font-size:15px;
+        font-stretch: 20px;
+        /* color:yellowgreen; 
+        text-align: center;
+        padding-top: 5%;
+    }
+    .wrapper { 
+        width: 10px;
+         display: flex;
+         flex-direction:column;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         min-height: 20rem;
+         padding-top: 10%;
+    }
+}
+ */
 
- 
+
+
+
+
+
+
+
+
+
+
  
