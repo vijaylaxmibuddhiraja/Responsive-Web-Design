@@ -1,138 +1,124 @@
 * {
-    margin: 0;
-    padding: 0;
-}
+        margin: 0;
+        padding: 0;
+   }
+
 body {
-    width: 100%;
-    /* height: 100vh; */
-    /* min-height: 100vh; */
-     display: flex;
-    justify-content: center;
-    flex-direction: column;   
-     background-color: black; 
-    font-family: "Poppins", sans-serif;
-    box-sizing: border-box;
-   
-}
+        width: 100%;
+        max-width: 1440px;
+        /* height: 100vh; */
+        /* min-height: 100vh; */
+        display: flex;
+        justify-content: center;
+        flex-direction: column;   
+        background-color: black; 
+        font-family: "Poppins", sans-serif;
+        box-sizing: border-box;  
+    }
 
  header {
-   width: 100%;  
-     /* height: 10vh;   */
-    display: flex;
-    /* align-items: center; */
-    justify-content: center; 
-     
-      
-} 
+        width: 100%;  
+         max-width: 1440px; 
+        /* height: 10vh;    */
+        display: flex;
+        /* align-items: center; */
+        justify-content: center; 
+        margin-left: 40px;      
+    } 
 
 .logo {
-    color: aliceblue;
-    font-size: 1.5rem;
-    font-weight: 600;
-  /* padding: 20px 10px;    */
-    text-decoration: none;
-      margin-left: 10%; 
-       margin-top: 5% 
-       
-}
+        color: aliceblue;
+        font-size: 1.5rem;
+        font-weight: 600;
+    /* padding: 20px 10px;    */
+        text-decoration: none;
+        margin-left: 10%; 
+        margin-top: 5%       
+    }
 
  .navbar {
-    width: 100%;
-    max-width: 1440px;  
-    /* height: 10vh;  */
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    
-} 
- .menu-icon {
-    width: 25px;
-    cursor: pointer;
-    margin-top: 5%;
-   
-    
- }
-   
+        width: 100%;
+        max-width: 1440px;  
+        /* height: 10vh;  */
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;    
+    } 
 
-
-  nav {
-    flex: 1;    
-    min-width: 267px;
-    flex-wrap: wrap;
-    margin-left: 10%;  
-    margin-top: 5%;  
-}
+.menu-icon {
+        width:40px;
+        cursor: pointer;
+        margin-top: 5%;        
+    }
+   
+nav {
+        flex: 1;    
+        min-width: 267px;
+        flex-wrap: wrap;
+        margin-left: 10%;  
+        margin-top: 5%;  
+    }
 
 nav ul li  {
-    display: inline-block;
-    list-style: none; 
-     padding: 10px;  
-    
-    
-}
+        display: inline-block;
+        list-style: none; 
+        padding: 10px;      
+    }
 
 
 nav ul li a {
-    text-decoration: none;
-    color: aliceblue;
-    font-size: 15px;
-   
-    
-} 
+        text-decoration: none;
+        color: aliceblue;
+        font-size: 15px;   
+    } 
 
 nav ul li a:hover {
-    color: red;
-} 
+        color: red;
+    } 
 
  .content {
-     
-   
-    display: flex;
-    flex-direction: row; 
-    justify-content: space-between;
-    align-items: center;
-   
-         
- }  
+        display: flex;
+        flex-direction: row; 
+        justify-content: space-between;
+        align-items: center;
+    }  
+
 .info-content {
-    
-    display: flex;
-    flex-direction: column;
-    width: 22rem;
-    height: 10rem;
-    margin-left: 12%;
-    
-}
+        max-width: 1440px;
+        display: flex;
+        flex-direction: column;
+        width: 22rem;
+        min-height: 10rem;
+        margin-left: 12%;
+   }
+
 h1 {
-    color: #ffff;
-    font-size: 60px;
-    font-weight: 400;
-    letter-spacing: 2;
-    
-}
+        color: #ffff;
+        font-size: 60px;
+        font-weight: 400;
+        letter-spacing: 2;
+    }
 
 p {
-    font-family: "Source Sans 3", sans-serif;
-    font-size: 20px;
-    color: #ffff;
-    font-weight: normal;
-    padding-top: 25%;
-   
-      
-}
+        font-family: "Source Sans 3", sans-serif;
+        font-size: 20px;
+        color: #ffff;
+        font-weight: normal;
+        padding-top: 25%;     
+   }
 
 .wrapper { 
-    position: relative;
-    width:35rem;
-    /* height: 40rem; */
-    display: flex;
-    flex-wrap: wrap; 
-    flex-direction: column;
-    justify-content: center;
-     margin-bottom: 10%; 
-    margin-right: 10%;  
-}
+        width:35rem;
+        max-width: 1440px;
+        min-height: 40rem;
+        display: flex;
+        flex-wrap: wrap; 
+        flex-direction: column;
+        justify-content: center;
+        margin-bottom: 10%; 
+        margin-right: 10%;  
+   }
 
 
 /* Image couldn't be postioned in vertical column */
