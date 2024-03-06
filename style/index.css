@@ -18,10 +18,9 @@ body {
 
  header {
         width: 100%;  
-         max-width: 1440px; 
-        /* height: 10vh;    */
+        max-width: 1440px;
         display: flex;
-        /* align-items: center; */
+        align-items: center; 
         justify-content: center; 
         margin-left: 40px;      
     } 
@@ -49,7 +48,8 @@ body {
 .menu-icon {
         width:40px;
         cursor: pointer;
-        margin-top: 5%;        
+        margin-top: 5%; 
+        display: none;       
     }
    
 nav {
@@ -85,11 +85,11 @@ nav ul li a:hover {
     }  
 
 .info-content {
+        width: 22rem;
         max-width: 1440px;
+        min-height: 10rem;
         display: flex;
         flex-direction: column;
-        width: 22rem;
-        min-height: 10rem;
         margin-left: 12%;
    }
 
@@ -109,16 +109,75 @@ p {
    }
 
 .wrapper { 
+    
         width:35rem;
         max-width: 1440px;
         min-height: 40rem;
         display: flex;
         flex-wrap: wrap; 
-        flex-direction: column;
-        justify-content: center;
+        /* flex-direction: column;
+        justify-content: center; */
         margin-bottom: 10%; 
         margin-right: 10%;  
    }
+
+@media only screen and (max-width:1100px) {
+    nav ul li {
+        display: inline;
+       padding-left: 10px;
+       }     
+   }
+
+@media only screen and (max-width:900px) {
+    nav ul li {
+        display: inline;
+    }
+    .nav-list{
+        display: flex;
+        float: right;
+         padding-right: 15px;
+        padding-left: 5px;   
+    }
+    nav ul li a {
+       padding: 10px; 
+        color: red;
+    }
+    .menu-icon  {
+        display: block;
+        cursor: pointer;
+    }
+    .content {
+        display: inline;
+        flex-direction: column;
+        flex-wrap: wrap; 
+    }
+    h1 {
+        font-size: 80px;
+        color: red;
+        align-items: center;
+        padding-top: 50%;
+    }
+    p {
+        font-size:15px;
+        font-stretch: 35px;
+        color: red;
+        text-align: center;
+        padding-top: 10%;
+    }
+    .wrapper { 
+         display: flex;
+         flex-direction:column;
+         flex-wrap: wrap;
+         justify-content: center;
+         align-items: center;
+         min-height: 40rem;
+         padding-top: 10%;
+    }
+}
+
+
+
+
 
 
 /* Image couldn't be postioned in vertical column */
@@ -127,10 +186,7 @@ p {
    nav ul {
     width: 100%;
    }
-       nav ul li {
-        display: inline;
-       }
-    
+      
    h1 {
     text-align: center;
    }
@@ -151,7 +207,7 @@ p {
 
    }  */
 /* Image aligned but couldn't removed side scroll */
- @media only screen and (max-width:900px) {
+ /* @media only screen and (max-width:900px) {
       
        nav ul {
             width: 100%;
@@ -163,11 +219,11 @@ p {
             align-items: end;
             margin-top: 15px;
             margin-bottom: 10px;
-        }
+        } */
 
         
             
-        } 
+  
 
          /* .content {
             display: flex;
