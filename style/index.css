@@ -11,7 +11,7 @@ body {
         display: flex;
         justify-content: center;
         flex-direction: column;   
-        background-color: black; 
+        background-color: black;  
         font-family: "Poppins", sans-serif;
         box-sizing: border-box;  
     }
@@ -26,7 +26,7 @@ body {
     } 
 
 .logo {
-        color: aliceblue;
+       color: aliceblue;
         font-size: 1.5rem;
         font-weight: 600;
     /* padding: 20px 10px;    */
@@ -35,7 +35,7 @@ body {
         margin-top: 5%       
     }
 
- .navbar {
+.navbar {
         width: 100%;
         max-width: 1440px;  
         /* height: 10vh;  */
@@ -70,12 +70,31 @@ nav ul li  {
 nav ul li a {
         text-decoration: none;
         color: aliceblue;
-        font-size: 15px;   
+        font-size: 15px;  
+         padding:15px
     } 
 
 nav ul li a:hover {
         color: red;
     } 
+
+.toggle-button {
+    position: absolute;
+    top:1.2rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20px;
+    height: 21px;
+}  
+
+.toggle-button .bar {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(246, 187, 78);
+    border-radius: 10px;
+}
 
  .content {
         display: flex;
@@ -129,19 +148,20 @@ p {
    }
 
 
-@media only screen and (max-width:900px) {
+@media only screen and (max-width:1000px) {
     nav ul li {
         display: inline;
+        margin-left: 10px ;
     }
     .nav-list{
         display: flex;
-        float: right;
-         padding-right: 15px;
-        padding-left: 5px;   
-    }
+         float: right; 
+         padding-right: 10px;  
+    }   
     nav ul li a {
        padding: 10px; 
-        color: red;
+        color:  rgb(246, 187, 78);
+        
     }
     .menu-icon  {
         display: block;
@@ -154,14 +174,14 @@ p {
     }
     h1 {
         font-size: 80px;
-        color: red;
+        color: rgb(246, 187, 78);
         align-items: center;
         padding-top: 50%;
     }
     p {
         font-size:15px;
         font-stretch: 35px;
-        color: red;
+        color:  rgb(246, 187, 78);
         text-align: center;
         padding-top: 10%;
     }
@@ -176,49 +196,31 @@ p {
     }
 }
 
-/* Below one doesn't work in either with min-width or with max-width */
-/* 
-@media only screen and (min-width:200px) { 
-    .content {
-        display: inline;
+@media (max-width:500px) {
+    .toggle-button {
+        display: flex;
+    }
+    .nav-list {
+        display: none; 
+        width: 100%;
+    }
+     .navbar {
         flex-direction: column;
-        flex-wrap: wrap; 
+        align-items: flex-start;
+    } 
+    .nav-list ul {
+        width: 100%;
+        flex-direction: column; 
     }
-    h1 {
-        font-size: 40px;
-        /* color: yellowgreen; 
-        align-items: center;
-        padding-top: 30%;
-        margin-left: 20%;
+    .nav-list li {
+        text-align: center; 
+        text-decoration: underline;    
     }
-    p {
-        font-size:15px;
-        font-stretch: 20px;
-        /* color:yellowgreen; 
-        text-align: center;
-        padding-top: 5%;
+    .nav-list li a {
+        padding: .5rem 1rem;
+        flex-direction: column;
     }
-    .wrapper { 
-        width: 10px;
-         display: flex;
-         flex-direction:column;
-         flex-wrap: wrap;
-         justify-content: center;
-         align-items: center;
-         min-height: 20rem;
-         padding-top: 10%;
+    .nav-list.active {
+        display: flex;
     }
 }
- */
-
-
-
-
-
-
-
-
-
-
-
- 
