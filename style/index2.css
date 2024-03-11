@@ -57,9 +57,12 @@ nav .menu-btn i {
     display: none;
 }
 
-@media (max-width:1000px) {
+@media (max-width:900px) {
     nav .menu-btn i {
         display: block;
+    }
+    #click:checked ~ .menu-btn i:before {
+        content: "\f00d";
     }
     nav ul {
         position: fixed;
